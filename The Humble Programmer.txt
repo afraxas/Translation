@@ -1,0 +1,459 @@
+ACM Turing Lecture 1972	
+EWD340
+The Humble Programmer
+by
+Edsger W. Dijkstra
+As a result of a long sequence of coincidences I entered the programming profession officially on the first spring morning of 1952 and as far as I have been able to trace, I was the first Dutchman to do so in my country.
+가능한 추적가능한 대까지는 ,1952 첫번째 봄 아침에 긴 연속된 연속적인 우연의 일치 결과 나는 공식적인 프로그래밍 전문직종으로 입문하게 되었고, 난 나의 나라에서 그렇게 할수 있는 첫번째 네덜란드는 사람이었더.
+ In retrospect the most amazing thing was the slowness with which, at least in my part of the world, the programming profession emerged, a slowness which is now hard to believe.
+가능 놀라운것을 회고해 볼때 적어도 나의 세계의 일부분에서 느림과 함께 프로그래밍 전문직은 나타났고  , 느림이 지금은 믿기 어렵겠지만
+ But I am grateful for two vivid recollections from that period that establish that slowness beyond any doubt.
+ 그러나 나는 고맙게도 두가지를 생상하고  기억한다 어떠한 의심 없이 천천히 설립하게 되었던 기간으로 부터 
+------------------------------------------------------------------------------------------------------------------
+ 
+ 
+After having programmed for some three years, I had a discussion with A. van Wijngaarden, who was then my boss at the Mathematical Centre in Amsterdam, a discussion for which I shall remain grateful to him as long as I live.
+ 
+ 
+The point was that I was supposed to study theoretical physics at the University of Leiden simultaneously,
+나는 동시에 레이나 유니버시티에서 이론 물리학을 공부할 시
+and as I found the two activities harder and harder to combine, I had to make up my mind, either to stop programming and
+두가지 활동을 동시에 할수 없었기 때문에 나는 마음을 다잡아야 해다. 프로그램밍을 중지 하고 정말로 존경받는 이론 물리학자
+become a real, respectable theoretical physicist, or to carry my study of physics to a formal completion only, with a
+가 되느냐 또는 나의 물리학 연구를 최소한의 노력으로 형식적인 완료만  할것이냐...그리고 된다면...
+minimum of effort, and to become....., yes what? A programmer?
+ 
+But was that a respectable profession? For after all, what was programming? Where was the sound body of knowledge that could support it as an intellectually respectable discipline?
+저게 존경받는 전문직? 결국 무엇을 프로그램밍하는건대?
+I remember quite vividly how I envied my hardware colleagues, who, when asked about their professional competence, could at least point out that they knew everything about vacuum tubes, amplifiers and the rest, whereas I felt that, when faced with that question, I would stand empty-handed.
+ 
+Full of misgivings I knocked on van Wijngaarden's office door, asking him whether I could "speak to him for a moment"; when I left his office a number of hours later, I was another person.
+ 
+ For after having listened to my problems patiently, he agreed that up till that moment there was not much of a programming discipline, but then he went on to explain quietly that automatic computers were here to stay, that we were just at the beginning and could not I be one of the persons called to make programming a respectable discipline in the years to come?
+ 
+ This was a turning point in my life and I completed my study of physics formally as quickly as I could.
+                      
+One moral of the above story is, of course, that we must be very careful when we give advice to younger people; sometimes they follow it!
+우리는 젊은 사람들에게 충고할때 조심해야만 한다 때때로 그들이 따라 하기 때문이다.
+ 
+------------------------------------------------------------------------------------------------------------------
+ 
+ 
+Another two years later, in 1957, I married and Dutch marriage rites require you to state your profession and I stated that I
+또 다른 이년 후 1957에 나는 네덜란드에서 결혹식을
+was a programmer.
+ 
+But the municipal authorities of the town of Amsterdam did not accept it on the grounds that there was no such
+도시의 암스테르담 마을의 권위 현지에서 는 그오 같은 전문직의 받아들일수 없었다.
+profession.
+And, believe it or not, but under the heading "profession" my marriage act shows the ridiculous entry "theoretical
+그리고  믿거나 말거나
+physicist"!
+ 
+So much for the slowness with which I saw the programming profession emerge in my own country.
+천천히 내 나라에 프로그래밍 전문직이 나타나는걸 보았다.
+Since then I have seen more of the world, and it is my general impression that in other countries, apart from a possible shift of dates, the growth pattern has been very much the same.
+그리고 그때 나는 세계의 좀더 큰 부분을 볼수 있었다. 그리고 그서은 나의 일반적인 표현 데이터의 이동 가능성을 제외 하고
+그 성장 패턴은 매우 많이 닮았다.
+ 
+ 
+Let me try to capture the situation in those old days in a little bit more detail, in the hope of getting a better understanding of the situation today.
+예날 그때 당시 상화을 조금 더 자세하게 켭춰해보면 오느날의 샇황을 좀더 잘 이해 할 것을 기대 할수 있다.
+While we pursue our analysis, we shall see how many common misunderstandings about the true nature of the programming task can be traced back to that now distant past.
+우리의 분석을 추가 하긴 하겠지만 , 우리가 얼마나 많은 프로그램 일의 실체에 관한  공통된 오해가 지금은 먼 과거 오해의 효시가 될수 있는지 알수 있을 것이다. 
+ 
+The first automatic electronic computers were all unique, single-copy machines and they were all to be found in an environment with the exciting flavour of an experimental laboratory.
+첫번째 자동 전기 컴퓨터는 모두 유일한 것이었다. 싱글 카피 기계들 그리고 그들은 모두가 실험적인 실험실의 흥미로운 분위기 환경 안 이었다는 것으로 알려 졌다.
+Once the vision of the automatic computer was there, its realisation was a tremendous challenge to the electronic
+technology then available, and one thing is certain:
+예전엔 자동 컴퓨터의 비전의 ,그것의 현은  그때 이용가능한 전자 기술의 엄청난 도전 이라는 것이었다,  그것의 확실한 한 가지는
+we cannot deny the courage of the groups that decided to try and build such a fantastic piece of equipment.
+우리는 환상적인 장비의 조각 같은 것을 만들고 노력하기로 한 그룹의 용기를 부정 할 수 없다.
+ 
+For fantastic pieces of equipment they were: in retrospect one can only wonder that those first machines worked at all, at least sometimes.
+환상적인 장비의 조각을에 대해서 : 돌이켜 생각해 보면 적어도 가끔은  잘 작동 했다는 것이 의문을 가지긴 햇다. 
+ The overwhelming problem was to get and keep the machine in working order.
+ 기계를 순서에 따라 작동하고 유지히키는 것이 불가항력 적인 문제 였다.
+ The preoccupation with the physical aspects of automatic computing is still reflected in the names of the older scientific societies in the field, such as the Association for Computing Machinery or the British Computer Society, names in which explicit reference is made to the physical equipment.
+ 자동 컴퓨터의 물리학적 측면의 심취 오래된 과학적  공동체 분야의 이름에 AMC & BCS  반영되어 있다 
+------------------------------------------------------------------------------------------------------------------
+What about the poor programmer? 
+가난한 프로그램에 관한건?
+Well, to tell the honest truth: he was hardly noticed.
+정직하게 말해서 그는 알수 없을 것이다.
+ For one thing, the first machines were so bulky that you could hardly move them and besides that, they required such extensive maintenance that it was quite natural that the place where people tried to use the machine was the same laboratory where the machine had been developed.
+첫 번째 기계들은 너무 부피가 커서 당신은 거의 움이이거나 곁에 두기에 어려울 것이다.확장된 유지비용 기계가 개발되어진 실에서 사용되어진 장소가 같은것은 당연한 일이었다.
+
+ Secondly, his somewhat invisible work was without any glamour: you could show the machine to visitors and that was several orders of magnitude more spectacular than some sheets of coding.
+두번째로  그의 볼수 없는 작업에는 어떠한 화려함이 없다 : 당신은 기계를 방문객들에게  몇몇의 코딩 종이들 보다 더 화려한  대규모의 순서보여 줄 수 있다.  
+ But most important of all, the programmer himself had a very modest view of his own work: his work derived all its significance from the existence of that wonderful machine. 
+그러나 무엇보다도 중요한 것은 프로그램들 스스로 대단치 않은 시선을 가지고 있었다:
+그의 작업은 그것의 중요성 모두는 아름다운 기계의 존재에서  유래 되었다.
+Because that was a unique machine, he knew only too well that his programs had only local significance and also, because it was patently obvious that this machine would have a limited lifetime, he knew that very little of his work would have a lasting value. 
+
+왜냐하면 그것은 유일한 기계였고 그는 너무 잘 알고 있었다 그의 프로그램이 단지 지엽적인 중요성만 가졌다는 것을 왜냐하면 분명히 명백하게 알고 있었다. 이 기계는 제한된 생명 주기 즉 그는 그닁 작업이 지속된 가치가 매우 적다는 것을 알았다
+
+Finally, there is yet another circumstance that had a profound influence on the programmer's attitude to his work: on the one hand, besides being unreliable, his machine was usually too slow and its memory was usually too small, i.e. he was faced with a pinching shoe, while on the other hand its usually somewhat queer order code would cater for the most unexpected constructions. 
+마침내 이미 또다른 환경이지만 그의 일을 대하는 프로그램머의 태도에서 심오한 영향을 주었고: 믿을수 없을 뿐만 아니라 다른 한 편으로는 거의 기계는 너무 느리고 메모리는 너무 작았다 즉, 그는 꽉 쫍아진 신발을을 직면하게 되었다. 반면에 다른 한 편으로는 보통 기묘한 코드들은 건설등 기대 할 수 없는 곳에 공급되었다.
+ 
+And in those days many a clever programmer derived an immense intellectual satisfaction from the cunning tricks by means of which he contrived to squeeze the impossible into the constraints of his equipment.
+ 그리고 그 때 당시에 현명한 프로그래머는 그의 장비 제약안에서 불가능한 게 짜여진 부자연스러운 방법들과 같은 교활한 속임수로 부터 엄청난 지적 만족을 느겼다.  
+------------------------------------------------------------------------------------------------------------------
+
+Two opinions about programming date from those days. 
+
+I mention them now, I shall return to them later. 
+지금을 언급하기 위해 나는 그들에게로 되돌아 가보겠다.
+The one opinion was that a really competent programmer should be puzzle-minded and very fond of clever tricks; the other opinon was that programming was nothing more than optimizing the efficiency of the computational process, in one direction or the other.
+한 의견은 정말로  퍼즐맞추기를 좋아하고 현명한 속임수를 매우 좋아하는  능숙한 프로그래머는 :
+다른 의견은 컴퓨터를 사용한 처리를  최대한 활용하는 것 그 이상은 아니다에 대한 같은 방향 또는 다른 방향이다.
+ 
+------------------------------------------------------------------------------------------------------------------
+
+The latter opinion was the result of the frequent circumstance that, indeed, the available equipment was a painfully pinching shoe, and in those days one often encountered the naive expectation that, once more powerful machines were available, programming would no longer be a problem, for then the struggle to push the machine to its limits would no longer be necessary and that was all what programming was about, wasn't it?
+참으로 나열된 것중 후자는 빈번한 환경의 결과 였다, 이용가능한 자비는 고통스러운 꽉낀 신발과 같았고, 그당시에는 천진난만한 기대에 종종 만족햇었고, 일단  좀더 파월 풀한 기계들이 이용가능하게 되었을때, 프로그래밍 그때는 더이상 필수적으로  제한된 기계에 집어 넣을려는 투쟁더이나 어떤 프로그램이냐는 문제가 아니였고 그렇지 않는냐??
+그러나 10년후에는 완벽하게 다른 일이 나타나게 될겅이다: 좀더 파월 풀한 기계를 이용 가능 하게 되었을때 하나의 대규모으 명령가 아니라 몇몇의 좀더 강력한 대규모의 명령이 가능했다.
+   
+
+ But in the next decades something completely different happened: more powerful machines became available, not just an order of magnitude more powerful, even several orders of magnitude more powerful. But instead of finding ourselves in the state of eternal bliss of all progamming problems solved, we found ourselves up to our necks in the software crisis! How come?
+그러나 모든 문제를 풀므로써 끊임없는 행복한 상태를 찾는것 대신에, 우리는 스스로 목까지 차오른 소프트웨어기계를 발견하게 될 것이다.어떻게 올 것인가?
+
+------------------------------------------------------------------------------------------------------------------
+
+There is a minor cause: in one or two respects modern machinery is basically more difficult to handle than the old machinery.
+가벼운 원인: 한 두가지를 기대해 보면 현대 기계류들은 옛날 기계들 보다 기본적으로 조더 다루기가 어렵다.
+ Firstly, we have got the I/O interrupts, occurring at unpredictable and irreproducible moments; compared with the old sequential machine that pretended to be a fully deterministic automaton, this has been a dramatic change and many a systems programmer's grey hair bears witness to the fact that we should not talk lightly about the logical problems created by that feature. 
+첫째로 우리는 입출력 인트럽트 가지게 되었는데 예견하거나 재생 할 수없는 순간에 나타나게되며; 전적으로 결정적인 자동화가 된것이라고 가장 했던 오래된 순차적 기계와 비교 했을때 이 것은 극적인 변화였고  많은 횐 머리의 시스템 프로그래머들은   
+우리는 그 특징으로 창조된 논리적 문제에 관해서 가볍게 이야기 해서는 안되었다라는것을  증명했다
+Secondly, we have got machines equipped with multi-level stores, presenting us problems of management strategy that, in spite of the extensive literature on the subject, still remain rather elusive.
+둘째로 우리가 멀티 레벨 저장 장치가 갖추어진 기계를 가지게 되었을때 , 그것의 관리 전략의 문제가  다소 찾기힘든 그 주제에 관한 방대한 문헌에도 불구 하고 여전히  우리에게 나타났다 
+ So much for the added complication due to structural changes of the actual machines.
+실제 기계의 구조상의 변화때문에 복잡하게 만드는 문제에 대해서는 그만 하기로 하자.
+ 
+------------------------------------------------------------------------------------------------------------------
+
+But I called this a minor cause; the major cause is... that the machines have become several orders of magnitude more powerful! 
+그라나 나는 이것을 사소한 원인으로 말햇었다 : 그 주용한 원인은 그것은 그계 거대 규모의 몇몇 명령이 좀더 강력해졌기 때문이다.
+To put it quite bluntly: as long as there were no machines, programming was no problem at all; when we had a few weak computers, programming became a mild problem, and now we have gigantic computers, programming had become an equally gigantic problem. 
+직설적으로 말하면 오랬도안 기계 없었고, 프로그램은 전혀 문제가 없었다.  우리가 빈약한 컴퓨터들을 갖지게 되었을때 프로그램밍은 온순한 문제를 가지게 되었고  , 우리가 거대한 컴퓨터를 가지게 된 지금  프로그래밍은 거대한 문제를 평등하게 가지게 되었다.  
+In this sense the electronic industry has not solved a single problem, it has only created them, it has created the problem of using its products.
+이런점에서 전자산업 풀수 없는 단일한 문제를 가지게 되었고, 이것은 단지 그들에 의해 만들어졌고, 이것은 그 물품을 사용하는 문제의 만들게 되었다 
+ To put it in another way: as the power of available machines grew by a factor of more than a thousand, society's ambition to apply these machines grew in proportion, and it was the poor programmer who found his job in this exploded field of tension between ends and means.
+ 뒤집어(바꿔(말하면 : 이용가능한 기계의 파워가 수천가지 이상의 요인으로 인해서 성장했을때 그것들을 제공하려 한 사회적 요구(야심)은 비례하여 성장했데 그리고 
+이거은 이분야에서 직업을 찾으려고 하는 가난한 프로그래머의 목적과 방법 사이의 긴장된 분야 폭발하게 되었다.
+  
+The increased power of the hardware, together with the perhaps even more dramatic increase in its reliability, made solutions feasible that the programmer had not dared to dream about a few years before. 
+하드웨어의 증가된 파워 는 아마 훨씬 더 극적인 신뢰성의 증가와 함께 , 프로그래머가 몇년전 에는 감희 꿈도 꿀 수 없는 실형가능한 솔루션을 만들었다. 
+ 
+And now, a few years later, he had to dream about them and, even worse, he had to transform such dreams into reality!
+그리고 몇 년후 지금 그는 그것들에 관한 꿈을 구어야만 했고 심하게는 그는 그와 같은 꿈을 현실을 옮겨 놓아야만 했다.
+Is it a wonder that we found ourselves in a software crisis? No, certainly not, and as you may guess, it was even predicted well in advance; but the trouble with minor prophets, of course, is that it is only five years later that you really know that they had been right.
+우리가 스스로 소프트웨어의 위기를 발겼한겅은 이상한 일이다? 아니다 확실하게 아니다 그리고 당신이 추측 하건대 이것은 미리 예견 가능 했었다: 그러나 물론 문제있고 작은 선지자들이 당신은 그들이 정말로 옳았다는 것을 오년 후에  알게 될것이다.
+------------------------------------------------------------------------------------------------------------------
+
+Then, in the mid-sixties, something terrible happened: the computers of the so-called third generation made their appearance. 
+60~70년대 생들은 끔찍한 일이 일어 날것이다:  그들의 표현대로 3세대라 불리우는 컴퓨터에 의해 
+The official literature tells us that their price/performance ratio has been one of the major design objectives.
+공식적인 문서들은 우리에게  그들의 성능대비 가격 비율 주요한 설계 목표중 하나 였다는 걸 말하고 있다.
+ But if you take as "performance" the duty cycle of the machine's various components, little will prevent you from ending up with a design in which the major part of your performance goal is reached by internal housekeeping activities of doubtful necessity.
+그러나 만일 성능을   기계의 다양한 부품 임무 순환으로 취한다면 ,  
+
+수행 목적의 중요한 일부분   필요성이 의심되는 내부적 집안을 돌보는 활동들에 다다르게 되는 설계 얻고 끝나는 것을 
+당신은 거의 보호 할 수 없을 것이다.
+ And if your definition of price is the price to be paid for the hardware, little will prevent you from ending up wth a design that is terribly hard to program for:
+만일 당신이 정의가 가격이라면  가격은 하드웨어위헤 지불 되어 질것이다. 거의 다음과 같이 프로그램 하기 몹시 어려운   설계를 얻꼬 끝나를 막기당신은 거의 보호 할 수 없을 것이다: 
+
+ for instance the order code might be such as to enforce, either upon the progrmmer or upon the system, early binding decisions presenting conflicts that really cannot be resolved.
+예들 들어 법을 집행하는  같은 명령어 코드의 경우,프로그램 또는 시스템 위에서 풀수 없는 분쟁들 에서 나타난  초기 법적 구속력 있는 결정은   
+ And to a large extent these unpleasant possibilities seem to have become reality.
+넓은 범위의 즐겁지 않은 문제들은 실현 될 것처럼 보였다. 
+
+
+------------------------------------------------------------------------------------------------------------------
+
+When these machines were announced and their functional specifications became known, quite a few among us must have become quite miserable; at least I was. 
+그러한 기계들이 발표 되고 그들의 기능적 명세가 알려지게 되었을때, 상당수 우리들중에서 매우 미참하게 될것이다 : 적어도 내가 아는 한 
+
+It was only reasonable to expect that such machines would flood the computing community, and it was therefore all the more important that their design should be as sound as possible.
+기대하는 합리적인 이유 그와 같은 기계들은 컴퓨터 공동체 홍수 , 그러므로 그들의 디자인 가능한 좋게 해야 했다는 것이 무엇 보다 중요하다  
+ But the design embodied such serious flaws that I felt that with a single stroke the progress of computing science had been retarded by at least ten years: it was then that I had the blackest week in the whole of my professional life.
+그러나 나는 컴퓨팅 과학을 단번에 진행 하려는 느낌을 받았었던  그와 같은 심각한 문제가 형상화된 설계는  적어도 10년은 지체되었었다: 바로 그 당시 나의 직업적인 삶에서 가장 어두웠던 주 였었다.  
+ Perhaps the most saddening thing now is that, even after all those years of frustrating experience, still so many people honestly believe that some law of nature tells us that machines have to be that way.
+아마 가장 슬프게 하는 것은 지금 일 것이다, 몇몇 자연 법칙이 우리에게 그 기계들이 그와 같은 방법으로 해야 한다고 말한다고 믿는 여전히 많은 정직한 사람들 있다는  좌절 스러운 그해의 경험들에  
+ They silence their doubts by observing how many of these machines have been sold, and derive from that observation the false sense of security that, after all, the design cannot have been that bad.
+그들은 얼마나 많은 기계들이 팔렸는가에 관한 관찰에 의한 그들의 의심과  결국에는 설계가 나쁘다고 받에 할 수 없는 불감증의 관찰의 유래에 침묵했다.
+ 
+
+ But upon closer inspection, that line of defense has the same convincing strength as the argument that cigarette smoking must be healthy because so many people do it.
+그러나  정밀검사 해 보면 ,(침묵에 관한) 방어선은  담배을 피우면 건강해 진다 왜냐하면 많은 사람들이 그럴게 하기 때문에 와 같은 설득력을 가진다. 
+------------------------------------------------------------------------------------------------------------------
+
+It is in this connection that I regre/t that it is not customary for scientific journals in the computing area to publish reviews of newly announced computers in much the same way as we review scientific publications: to review machines would be at least as important.
+이런 연관성에서
+ 나는 유감 스럽게 생각한다
+컴퓨터 분야의 과학적 저널들에게는  새롭게 발표된 컴퓨터의 리뷰들의 출판은 통상적이지 안은 것이 유감 스러웠고 같은 방법으로 우리는 과학적 출판물들을 재검토했다: 60년대 초반 나는  이것이 재출되는 경향에 관한 재검토와 같은
+ 
+ And here I have a confession to make: in the early sixties I wrote such a review with the intention of submitting it to the CACM,
+나는 고백하겠다: 60년대 초반 나는 이것이 제출되는 경향과 함께 이와 같은 검토를  CACM에  섰었다.
+ but in spite of the fact that the few colleagues to whom the text was sent for their advice, urged me all to do so,
+the text was sent for their advice to colleagues
+그러한 동료들이 충고를 위해 그들에게 보내졌었던 글 없었다    사실에도 불구 하고 나를 그렇게 하도록 촉구했었다.
+ 
+I did not dare to do it, fearing that the difficulties either for myself or for the editorial board would prove to be too great.
+나는 감히 그렇게 할 용기가 없었다, 내게 스스로나 편집위원회에게 증명하기에 너무 방대했던 어려움에 두려움
+ This suppression was an act of cowardice on my side for which I blame myself more and more.
+이러한 억제는 비겁한 행동이였고 내 마음 한 구석에서는 나를 계속해서 자책하게 되었다.
+
+ The difficulties I foresaw were a consequence of the absence of generally accepted criteria, and although I was convinced of the validity of the criteria I had chosen to apply, I feared that my review would be refused or discarded as "a matter of personal taste".
+내가 예견 했던 어려움들은 일반적으로 받아들려던 비평의 결여의 결과 였다, 그리고 비록 나는 내가 적용 할지 선택 해야만 했던 비평의 유효셩(정당성을) 을 확신하지만, 나는 나의 검토가 개인적인 취향의 문제로써 거절되거나 버려질까봐 두려웠었다. 
+
+ I still think that such reviews would be extremely useful and I am longing to see them appear, for their accepted appearance would be a sure sign of maturity of the computing community.
+
+나는 여전히 그와 같은 검토들은 극도적으로 유용하다고 생각호고 나는 그들을 나타내어 보기를 갈망한다, 
+그들의 받아들였던 표현 컴퓨팅 커뮤니티의 확실한 성숙함을 될것이다.  
+
+------------------------------------------------------------------------------------------------------------------
+
+The reason that I have paid the above attention to the hardware scene is because I have the feeling that one of the most important aspects of any computing tool is its influence on the thinking habits of those that try to use it, 
+내가 하드웨어적인 분야에 관신을 쏟는 이유는 왜냐하면 
+
+ 모든 컴퓨팅 툴의 가장 중요한 측명중 하나라는 그것들을 사용하려고 노력하는 생각 하는 습관에 영향을 주기 때문이다. 
+
+and because I have reasons to believe that that influence is many times stronger than is commonly assumed.
+그리고 나는 그러한 영향은 일반적으로 추정되는 것보다 훨씬 강하다는 믿음이 그 이유였다
+
+
+ Let us now switch our attention to the software scene.
+우리의 관심을 소프트웨어 분야로 돌려 보기로 하자
+------------------------------------------------------------------------------------------------------------------
+
+Here the diversity has been so large that I must confine myself to a few stepping stones.
+여기서의 다양성은  너무나 크게 때문에 몇몇 다릿돌에 국한하는 선에 그쳐야만 했다.
+ 
+I am painfully aware of the arbitrariness of my choice and I beg you not to draw any conclusions with regard to my appreciation of the many efforts that will remain unmentioned.
+나는 고통스럽게 자의성을 의식하게 되었고
+나는 당신에게   언급되지 않은체 남아 있는 많은 노력에 대한 감탄에서 어떠한 결론도  이끌어 내지 말것을
+간청한다
+------------------------------------------------------------------------------------------------------------------
+
+In the beginning there was the EDSAC in Cambridge, England, and I think it quite impressive that right from the start the notion of a subroutine library played a central role in the design of that machine and of the way in which it should be used.
+태초는 영국의 캠프리지 EDSAC 였다 그리고 나는 /매우 인상깊게  이것을 생각햇었다/ 부분프로그램 라이브러리 개념의 시작은
+그 그계와 그것을 쓰이게될 방법의 설계에 중심적인 역할을 했다. 
+ It is now nearly 25 years later and the computing scene has changed dramatically, but the notion of basic software is still with us, and the notion of the closed subroutine is still one of the key concepts in programming.
+지금 으로 부터 거의 25년 전에 컴퓨터 분야에서는 극적인 변화가 있었다, 그러나 기본적인 소프트웨어의 개념은 여전히 우리와 함께 이다, 그리고 닫힌 부분프로그램의 개념은 여전히 프로그래밍에서 가장 중요한 개념중 하나였다
+ 
+We should recognise the closed subroutines as one of the greatest software inventions; it has survived three generations of computers and it will survive a few more,
+우리는 닫힌 부분프로그램이 가장 큰 소프트웨어 발명들 중 하라는 걸 알아보아야 한다.: 살아남은 삼세대 컴퓨터들 그리고
+그것은 당분간 살아남을 것이다.
+ 
+ because it caters for the implementation of one of our basic patterns of abstraction.
+왜냐 하면 우리의 기본적인고 추상적인 패턴 들 중 하나를 충족 부응 하기 때문이다
+ 
+ 
+Regrettably enough, its importance has been underestimated in the design of the third generation computers, in which the great number of explicitly named registers of the arithmetic unit implies a large overhead on the subroutine mechanism.
+유감스럽게도 충분한, 이것은 중요한 은 삼세대 컴퓨터의 설계 에서 과소평가 되었고,  레지스터라고 명쾌하게 이름지어진  계산 유닛의 많은 수는  많은 부분프로그램 기계 위에서 많은 간접비용을 암시했다.
+But even that did not kill the concept of the subroutine, and we can only pray that the mutation won't prove to be hereditary.
+그러나 그것은 부분프로그램의 개념을 죽이지 않았다 그리고 우리는  돌연변이는 유전이 증명 될수 없라는 것을 단지 기도만 할뿐이었다.
+------------------------------------------------------------------------------------------------------------------
+
+The second major development on the software scene that I would like to mention is the birth of FORTRAN.
+소프트웨어에서 두번째로 중요한  개발은 나는 포트란의 탄생이라고 말하고 싶다. 
+At that time this was a project of great temerity and the people responsible for it deserve our great admiration.
+그때는 이것은 크게 무모한 프로젝트였고 이것을 책임진 사람들에게 우리는 커다란 감사를 마땅히 받을만 하다.
+It would be absolutely unfair to blame them for shortcomings that only became apparent after a decade or so of extensive usage: groups with a successful look-ahead of ten years are quite rare! In retrospect we must rate FORTRAN as a successful coding technique,
+단지 십년 후에 분명하게 되거나 그리고 대규모 사용만으로  결점에 대해서 그들에게 비난하는것 절대적으로 불공평하다
+ 
+ 
+ but with very few effective aids to conception, aids which are now so urgently needed that time has come to consider it out of date.
+그러나 효과적인 개념에 대한 도움 이 매우 적었고,  도움은 이제 절실히 필요하기 때문에 이것이 구식임을 고려해볼 시간이 왔다 
+The sooner we can forget that FORTRAN has ever existed, the better, for as a vehicle of thought it is no longer adequate: it wastes our brainpower, is too risky and therefore too expensive to use.
+ 
+곧 우리는 포트란이 전에 존재 해었는지 잊을수 있으며, 더 좋은  생각의 전달 수단으로써 이것은 더이상 적절하지 않다 :
+ 우리의 지적 능력을 낭비한 이것은 , 너무 위험하고  그 때문에 사용하기에 너무 비싸다.
+ 
+FORTRAN's tragic fate has been its wide acceptance, mentally chaining thousands and thousands of programmers to our past mistakes.
+포트란의 비극적인 운명은   수많은 프로그래머들에게 우리의 과거 싫수에 정신적으로 속박을  넓게 받아들이게 한것이었다 
+I pray daily that more of my fellow-programmers may find the means of freeing themselves from the curse of compatibility.
+나는 매일 기도한다 나의 동료 프로그래머에게  양립가능한 저주로 부터 그들스스로  자유의 수단 발견 하게 될지도 모른다고
+ 
+ 
+------------------------------------------------------------------------------------------------------------------
+
+The third project I would not like to leave unmentioned is LISP, a fascinating enterprise of a completely different nature.
+내가 언급하지 않고 떠나기 싫은 세번째 프로젝트는  LISP 이면 , 완변하게 다른 유형 의 흥미로운 사업
+ With a few very basic principles at its foundation, it has shown a remarkable stability.
+몇몇의 매우 기본적인 원리에 근거로, 이것은 놀라운 정도로 안정함이 보였었다.
+ 
+ Besides that, LISP has been the carrier for a considerable number of in a sense our most sophisticated computer applications.
+그 박에 LISP 우리의 가장 정교한 컴퓨터의 의미(sense)를 상당한 수를 전달 했었다.
+ 
+LISP has jokingly been described as "the most intelligent way to misuse a computer".
+LISP는  "컴퓨터를 학대하는 가장 지적인 방법"으로 농담삼아 묘사되기도 했다.
+ I think that description a great compliment because it transmits the full flavour of liberation: it has assisted a number of our most gifted fellow humans in thinking previously impossible thoughts.
+나는 저런 서술이 거대한 찬사라고 생각한다 왜냐 하면 그것은 완전히 해방의 분위기를 보냈기 때문이다: 우리의 가낭 재능있는  동료 인간들 생각의 안에서 이전에는 불가능한 생각을 보조했었다  
+------------------------------------------------------------------------------------------------------------------
+
+The fourth project to be mentioned is ALGOL 60.
+언급한 네번째 프로젝트는 ALGOL 60이다.
+While up to the present day FORTRAN programmers still tend to understand their programming language in terms of the specific implementation they are working with —hence the prevalence of octal and hexadecimal dumps—,
+오늘날의 포트란 프로그래머들까지 명확한 이행에 관하여  그들이 프로그래밍 언어 여전히 이해하려는 경향이 있으며
+ 
+그들은 -그러므로 8진의 또는 16진의 데이터의 널리퍼진 -
+ 
+while the definition of LISP is still a curious mixture of what the language means and how the mechanism works,
+LISP의 정의는 
+특이한 그 언어가 의마하는 것이 무엇이냐 그리고 어떻게 그 기계장치가 작동하는냐가 여전히 섞여있다.
+ 
+ 
+the famous Report on the Algorithmic Language ALGOL 60 is the fruit of a genuine effort to carry abstraction a vital step further and to define a programming language in an implementation-independent way.
+알골60(ALGOL60)에 관한 유명한 보고서는 추상적인 개념을 생명 유지와 관련된 한 걸음을 가져왔고 독립적인 실행 방법을 프로그래밍 언어를 정의한  진정한 노력의 결실이다.
+ 
+ 
+One could argue that in this respect its authors have been so successful that they have created serious doubts as to whether it could be implemented at all!
+ 
+사람들은 저작자들은 너무 성공적이여서 그것이 전혀 실행 될것이냐에 관한 심각한 의심을 만들었던 이러한 존경에 대해 관해 논쟁 할수있다
+ 
+The report gloriously demonstrated the power of the formal method BNF, now fairly known as Backus-Naur-Form, and the power of carefully phrased English, a least when used by someone as brilliant as Peter Naur.
+훌륭한 보고서는 일정한 계획에 따른 BNF 메소드의 힘을 입증하였고, 지금 분명하게 배커스 나우 폼(BNF Backus-Naur-Form)으로 알려진, 그리고 조심스럽게 영어로 표현된 힘, 적어도  Peter Nau 만큼 찬란한 누군가에 의해 사용되어진 그때는
+I think that it is fair to say that only very few documents as short as this have had an equally profound influence on the computing community.
+나는 이것 만큼 짧은  매우 적은 문서만이 컴퓨팅 사회에 골고루 엄청난 영향을 미쳤쳤다고  분명하게 말했던 것을  생각한다.
+ 
+The ease with which in later years the names ALGOL and ALGOL-like have been used, as an unprotected trade mark, to lend some of its glory to a number of sometimes hardly related younger projects, is a somewhat shocking compliment to its standing.
+그후에 ALGOL 그리고 ALGOL같이 불리어진 것이 쉽게 ~쓰여왔다,보호되지 않은 상표같이, 이러한 영광의 일부을 거의 연관되기 어려운 젊은 프로젝트들의 몇몇에게 빌려준,이것의 자립에 다소 놀라운 칭찬 이다.
+ 
+The strength of BNF as a defining device is responsible for what I regard as one of the weaknesses of the language: an over-elaborate and not too systematic syntax could now be crammed into the confines of very few pages.
+BNF의 힘을 장치로 제한 할때  언어의 연약함들중 하나로써 여겨지는 것에 책임을 진다:
+지나치게 공들인 거나 너무 쳬계녁인 문법이 아니 매우 적은 페이지의 국한된 것이들이 당장 체우게 되었다. ??
+With a device as powerful as BNF, the Report on the Algorithmic Language ALGOL 60 should have been much shorter.
+BNF 만큼 강력한 장치에서, 알고리즘적인 언어 ALGOL 60관한 보고서에서  훨씬 짧게 되었다.
+ 
+Besides that I am getting very doubtful about ALGOL 60's parameter mechanism: it allows the programmer so much combinatorial freedom, that its confident use requires a strong discipline from the programmer. 게다가 나는 ALGOL60의 파라미터 매카니즘에 관해서 매우 의심을 가지게되었다:
+이것은 프로그래머에게 너무 많은 조합의 자유를 허락했다, 이것의 확실한 사용은   프로그래머들 부터 튼튼한 훈련을 필요로 하였다.
+ 
+Besides expensive to implement it seems dangerous to use.
+ 게다가  이것을 시행하기에 너무 비쌋고 사용하기에도 너무 위협했다.
+ 
+------------------------------------------------------------------------------------------------------------------
+
+Finally, although the subject is not a pleasant one, I must mention PL/1, a programming language for which the defining documentation is of a frightening size and complexity.
+마침내 비록 그 주제는 즐겁지는 않았지만, 나는 PL/1을 언급해야만 한다, 정의한 문서화에서는  무섭운 크기와 복잡성에 관한 프로그램언어라고 한다
+ 
+ 
+ Using PL/1 must be like flying a plane with 7000 buttons, switches and handles to manipulate in the cockpit.
+PL/1를 사용은  7000 버튼과 스위치 그리고  조정석에서 조정하기 위해서 핸들을 가진체 비행기를 비행시키는 것과 같았었따
+ 
+ I absolutely fail to see how we can keep our growing programs firmly within our intellectual grip when by its sheer baroqueness the programming language —our basic tool, mind you!— already escapes our intellectual control.
+나는 절대적으로 실패 할 것처럼 보였다
+ 
+어떻게 우리가 우리의 성장하는 프로그램들을 견고하게 유지 할수 있을거이냐 
+ 
+ 
+나는 어떻게 우리가 우리의 지적인 차이 안으로 성장하는 프로그램들을 확고하게 유지 할수 있는냐을 알아보는데 절대적으로 샐패 할 것처럼 보였다
+순전한 바로크양식의 시작 프로그래밍 언어-우리의 기본적인 툴, 뭐랄까!- 이미 우리의 지적인 콘트롤을 탈출해
+ 
+ 
+ 
+And if I have to describe the influence PL/1 can have on its users, the closest metaphor that comes to my mind is that of a drug.
+그리고 내가 만일 PL/1이 그것의 유저들을 약점을 잡을수 있는 영향에 대해 설명해야 한다면,
+가장 가깝께 마음속으로 떠오른 은유는 마약이다.
+ 
+I remember /from a symposium on higher level programming language /a lecture given in defense of PL/1 by a man who described himself as one of its devoted users.
+ 
+나는 높은 수준의 프로그래밍 언어 학술대회에 그것에 헌신한 사용자들중 한명임을 스스로 설명햇던 PL/1의 방어에 포기한 남장의 강의를 기억한다.
+ 
+ 
+ 
+But within a one-hour lecture in praise of PL/1. he managed to ask for the addition of about fifty new "features", little supposing that the main source of his problems could very well be that it contained already far too many "features".
+그러나 PL/1을 칭찬한 약 한시간 강의안에서, 그는    간신히 ~하다  약 55게의 새롭게 추가된 특징 
+ 
+만약 그의 문제들의 그의 문제들의 중요한 원천이
+ 
+The speaker displayed all the depressing symptoms of addiction, reduced as he was to the state of mental stagnation in which he could only ask for more, more, more...
+ 
+ 모든 우울한 중독 증세 보여주었던 그 말하는 사람은,
+ 
+ 그는 단지 계속계속해서 물어 보기만하는 정신적인 침체의 상태였다.
+ 
+ When FORTRAN has been called an infantile disorder, full PL/1, with its growth characteristics of a dangerous tumor, could turn out to be a fatal disease.
+포트란이 어린애의 장래 라고 불리었을때,
+모든 PL/1 ,위험한 종양의 특징 성향들 ,
+ 치명적인 병으로 밝혀졌다
+ 
+ 
+------------------------------------------------------------------------------------------------------------------
+ 
+
+ 
+So much for the past.
+ 
+ But there is no point in making mistakes unless thereafter we are able to learn from them.
+그러나
+만일 우리가 그들로 부터 배울수 없은후에   실수에서 요점이 없다
+ 
+ As a matter of fact, I think that we have learned so much, that within a few years programming can be an activity vastly different from what it has been up till now, so different that we had better prepare ourselves for the shock.
+ 
+사실은 , 우리가 많이 배울수 있다고 생각한다,
+몇년의 프로그래밍에서
+ 
+ 
+ Let me sketch for you one of the posssible futures.
+ 
+ At first sight, this vision of programming in perhaps already the near future may strike you as utterly fantastic.
+ 
+ Let me therefore also add the considerations that might lead one to the conclusion that this vision could be a very real possibility.
+ 
+------------------------------------------------------------------------------------------------------------------
+
+The vision is that, well before the seventies have run to completion, we shall be able to design and implement the kind of systems that are now straining our programming ability, at the expense of only a few percent in man-years of what they cost us now, and that besides that, these systems will be virtually free of bugs. These two improvements go hand in hand. In the latter respect software seems to be different from many other products, where as a rule a higher quality implies a higher price. Those who want really reliable software will discover that they must find means of avoiding the majority of bugs to start with, and as a result the programming process will become cheaper. If you want more effective programmers, you will discover that they should not waste their time debugging, they should not introduce the bugs to start with. In other words: both goals point to the same change.
+------------------------------------------------------------------------------------------------------------------
+
+Such a drastic change in such a short period of time would be a revolution, and to all persons that base their expectations for the future on smooth extrapolation of the recent past —appealing to some unwritten laws of social and cultural inertia— the chance that this drastic change will take place must seem negligible. But we all know that sometimes revolutions do take place! And what are the chances for this one?
+------------------------------------------------------------------------------------------------------------------
+
+There seem to be three major conditions that must be fulfilled. The world at large must recognize the need for the change; secondly the economic need for it must be sufficiently strong; and, thirdly, the change must be technically feasible. Let me discuss these three conditions in the above order.
+------------------------------------------------------------------------------------------------------------------
+
+With respect to the recognition of the need for greater reliability of software, I expect no disagreement anymore. Only a few years ago this was different: to talk about a software crisis was blasphemy. The turning point was the Conference on Software Engineering in Garmisch, October 1968, a conference that created a sensation as there occured the first open admission of the software crisis. And by now it is generally recognized that the design of any large sophisticated system is going to be a very difficult job, and whenever one meets people responsible for such undertakings, one finds them very much concerned about the reliability issue, and rightly so. In short, our first condition seems to be satisfied.
+------------------------------------------------------------------------------------------------------------------
+
+Now for the economic need. Nowadays one often encounters the opinion that in the sixties programming has been an overpaid profession, and that in the coming years programmer salaries may be expected to go down. Usually this opinion is expressed in connection with the recession, but it could be a symptom of something different and quite healthy, viz. that perhaps the programmers of the past decade have not done so good a job as they should have done. Society is getting dissatisfied with the performance of programmers and of their products. But there is another factor of much greater weight. In the present situation it is quite usual that for a specific system, the price to be paid for the development of the software is of the same order of magnitude as the price of the hardware needed, and society more or less accepts that. But hardware manufacturers tell us that in the next decade hardware prices can be expected to drop with a factor of ten. If software development were to continue to be the same clumsy and expensive process as it is now, things would get completely out of balance. You cannot expect society to accept this, and therefore we must learn to program an order of magnitude more effectively. To put it in another way: as long as machines were the largest item on the budget, the programming profession could get away with its clumsy techniques, but that umbrella will fold rapidly. In short, also our second condition seems to be satisfied.
+------------------------------------------------------------------------------------------------------------------
+
+And now the third condition: is it technically feasible? I think it might and I shall give you six arguments in support of that opinion.
+A study of program structure had revealed that programs —even alternative programs for the same task and with the same mathematical content— can differ tremendously in their intellectual manageability. A number of rules have been discovered, violation of which will either seriously impair or totally destroy the intellectual manageability of the program. These rules are of two kinds. Those of the first kind are easily imposed mechanically, viz. by a suitably chosen programming language. Examples are the exclusion of goto-statements and of procedures with more than one output parameter. For those of the second kind I at least —but that may be due to lack of competence on my side— see no way of imposing them mechanically, as it seems to need some sort of automatic theorem prover for which I have no existence proof. Therefore, for the time being and perhaps forever, the rules of the second kind present themselves as elements of discipline required from the programmer. Some of the rules I have in mind are so clear that they can be taught and that there never needs to be an argument as to whether a given program violates them or not. Examples are the requirements that no loop should be written down without providing a proof for termination nor without stating the relation whose invariance will not be destroyed by the execution of the repeatable statement.
+------------------------------------------------------------------------------------------------------------------
+
+I now suggest that we confine ourselves to the design and implementation of intellectually manageable programs. If someone fears that this restriction is so severe that we cannot live with it, I can reassure him: the class of intellectually manageable programs is still sufficiently rich to contain many very realistic programs for any problem capable of algorithmic solution. We must not forget that it is not our business to make programs, it is our business to design classes of computations that will display a desired behaviour. The suggestion of confining ourselves to intellectually manageable programs is the basis for the first two of my announced six arguments.
+------------------------------------------------------------------------------------------------------------------
+
+Argument one is that, as the programmer only needs to consider intellectually manageable programs, the alternatives he is choosing between are much, much easier to cope with.
+------------------------------------------------------------------------------------------------------------------
+
+Argument two is that, as soon as we have decided to restrict ourselves to the subset of the intellectually manageable programs, we have achieved, once and for all, a drastic reduction of the solution space to be considered. And this argument is distinct from argument one.
+------------------------------------------------------------------------------------------------------------------
+
+Argument three is based on the constructive approach to the problem of program correctness. Today a usual technique is to make a program and then to test it. But: program testing can be a very effective way to show the presence of bugs, but is hopelessly inadequate for showing their absence. The only effective way to raise the confidence level of a program significantly is to give a convincing proof of its correctness. But one should not first make the program and then prove its correctness, because then the requirement of providing the proof would only increase the poor programmer's burden. On the contrary: the programmer should let correctness proof and program grow hand in hand. Argument three is essentially based on the following observation. If one first asks oneself what the structure of a convincing proof would be and, having found this, then constructs a program satisfying this proof's requirements, then these correctness concerns turn out to be a very effective heuristic guidance. By definition this approach is only applicable when we restrict ourselves to intellectually manageable programs, but it provides us with effective means for finding a satisfactory one among these.
+------------------------------------------------------------------------------------------------------------------
+
+Argument four has to do with the way in which the amount of intellectual effort needed to design a program depends on the program length. It has been suggested that there is some kind of law of nature telling us that the amount of intellectual effort needed grows with the square of program length. But, thank goodness, no one has been able to prove this law. And this is because it need not be true. We all know that the only mental tool by means of which a very finite piece of reasoning can cover a myriad cases is called "abstraction"; as a result the effective exploitation of his powers of abstraction must be regarded as one of the most vital activities of a competent programmer. In this connection it might be worth-while to point out that the purpose of abstracting is not to be vague, but to create a new semantic level in which one can be absolutely precise. Of course I have tried to find a fundamental cause that would prevent our abstraction mechanisms from being sufficiently effective. But no matter how hard I tried, I did not find such a cause. As a result I tend to the assumption —up till now not disproved by experience— that by suitable application of our powers of abstraction, the intellectual effort needed to conceive or to understand a program need not grow more than proportional to program length. But a by-product of these investigations may be of much greater practical significance, and is, in fact, the basis of my fourth argument. The by-product was the identification of a number of patterns of abstraction that play a vital role in the whole process of composing programs. Enough is now known about these patterns of abstraction that you could devote a lecture to about each of them. What the familiarity and conscious knowledge of these patterns of abstraction imply dawned upon me when I realized that, had they been common knowledge fifteen years ago, the step from BNF to syntax-directed compilers, for instance, could have taken a few minutes instead of a few years. Therefore I present our recent knowledge of vital abstraction patterns as the fourth argument.
+------------------------------------------------------------------------------------------------------------------
+
+Now for the fifth argument. It has to do with the influence of the tool we are trying to use upon our own thinking habits. I observe a cultural tradition, which in all probability has its roots in the Renaissance, to ignore this influence, to regard the human mind as the supreme and autonomous master of its artefacts. But if I start to analyse the thinking habits of myself and of my fellow human beings, I come, whether I like it or not, to a completely different conclusion, viz. that the tools we are trying to use and the language or notation we are using to express or record our thoughts, are the major factors determining what we can think or express at all! The analysis of the influence that programming languages have on the thinking habits of its users, and the recognition that, by now, brainpower is by far our scarcest resource, they together give us a new collection of yardsticks for comparing the relative merits of various programming languages. The competent programmer is fully aware of the strictly limited size of his own skull; therefore he approaches the programming task in full humility, and among other things he avoids clever tricks like the plague. In the case of a well-known conversational programming language I have been told from various sides that as soon as a programming community is equipped with a terminal for it, a specific phenomenon occurs that even has a well-established name: it is called "the one-liners". It takes one of two different forms: one programmer places a one-line program on the desk of another and either he proudly tells what it does and adds the question "Can you code this in less symbols?" —as if this were of any conceptual relevance!— or he just asks "Guess what it does!". From this observation we must conclude that this language as a tool is an open invitation for clever tricks; and while exactly this may be the explanation for some of its appeal, viz. to those who like to show how clever they are, I am sorry, but I must regard this as one of the most damning things that can be said about a programming language. Another lesson we should have learned from the recent past is that the development of "richer" or "more powerful" programming languages was a mistake in the sense that these baroque monstrosities, these conglomerations of idiosyncrasies, are really unmanageable, both mechanically and mentally. I see a great future for very systematic and very modest programming languages. When I say "modest", I mean that, for instance, not only ALGOL 60's "for clause", but even FORTRAN's "DO loop" may find themselves thrown out as being too baroque. I have run a a little programming experiment with really experienced volunteers, but something quite unintended and quite unexpected turned up. None of my volunteers found the obvious and most elegant solution. Upon closer analysis this turned out to have a common source: their notion of repetition was so tightly connected to the idea of an associated controlled variable to be stepped up, that they were mentally blocked from seeing the obvious. Their solutions were less efficient, needlessly hard to understand, and it took them a very long time to find them. It was a revealing, but also shocking experience for me. Finally, in one respect one hopes that tomorrow's programming languages will differ greatly from what we are used to now: to a much greater extent than hitherto they should invite us to reflect in the structure of what we write down all abstractions needed to cope conceptually with the complexity of what we are designing. So much for the greater adequacy of our future tools, which was the basis of the fifth argument.
+------------------------------------------------------------------------------------------------------------------
+
+As an aside I would like to insert a warning to those who identify the difficulty of the programming task with the struggle against the inadequacies of our current tools, because they might conclude that, once our tools will be much more adequate, programming will no longer be a problem. Programming will remain very difficult, because once we have freed ourselves from the circumstantial cumbersomeness, we will find ourselves free to tackle the problems that are now well beyond our programming capacity.
+------------------------------------------------------------------------------------------------------------------
+
+You can quarrel with my sixth argument, for it is not so easy to collect experimental evidence for its support, a fact that will not prevent me from believing in its validity. Up till now I have not mentioned the word "hierarchy", but I think that it is fair to say that this is a key concept for all systems embodying a nicely factored solution. I could even go one step further and make an article of faith out of it, viz. that the only problems we can really solve in a satisfactory manner are those that finally admit a nicely factored solution. At first sight this view of human limitations may strike you as a rather depressing view of our predicament, but I don't feel it that way, on the contrary! The best way to learn to live with our limitations is to know them. By the time that we are sufficiently modest to try factored solutions only, because the other efforts escape our intellectual grip, we shall do our utmost best to avoid all those interfaces impairing our ability to factor the system in a helpful way. And I cannot but expect that this will repeatedly lead to the discovery that an initially untractable problem can be factored after all. Anyone who has seen how the majority of the troubles of the compiling phase called "code generation" can be tracked down to funny properties of the order code, will know a simple example of the kind of things I have in mind. The wider applicability of nicely factored solutions is my sixth and last argument for the technical feasibiilty of the revolution that might take place in the current decade.
+------------------------------------------------------------------------------------------------------------------
+
+In principle I leave it to you to decide for yourself how much weight you are going to give to my considerations, knowing only too well that I can force no one else to share my beliefs. As each serious revolution, it will provoke violent opposition and one can ask oneself where to expect the conservative forces trying to counteract such a development. I don't expect them primarily in big business, not even in the computer business; I expect them rather in the educational institutions that provide today's training and in those conservative groups of computer users that think their old programs so important that they don't think it worth-while to rewrite and improve them. In this connection it is sad to observe that on many a university campus the choice of the central computing facility has too often been determined by the demands of a few established but expensive applications with a disregard of the question how many thousands of "small users" that are willing to write their own programs were going to suffer from this choice. Too often, for instance, high-energy physics seems to have blackmailed the scientific community with the price of its remaining experimental equipment. The easiest answer, of course, is a flat denial of the technical feasibility, but I am afraid that you need pretty strong arguments for that. No reassurance, alas, can be obtained from the remark that the intellectual ceiling of today's average programmer will prevent the revolution from taking place: with others programming so much more effectively, he is liable to be edged out of the picture anyway.
+------------------------------------------------------------------------------------------------------------------
+
+There may also be political impediments. Even if we know how to educate tomorrow's professional programmer, it is not certain that the society we are living in will allow us to do so. The first effect of teaching a methodology —rather than disseminating knowledge— is that of enhancing the capacities of the already capable, thus magnifying the difference in intelligence. In a society in which the educational system is used as an instrument for the establishment of a homogenized culture, in which the cream is prevented from rising to the top, the education of competent programmers could be politically impalatable.
+------------------------------------------------------------------------------------------------------------------
+
+Let me conclude. Automatic computers have now been with us for a quarter of a century. They have had a great impact on our society in their capacity of tools, but in that capacity their influence will be but a ripple on the surface of our culture, compared with the much more profound influence they will have in their capacity of intellectual challenge without precedent in the cultural history of mankind. Hierarchical systems seem to have the property that something considered as an undivided entity on one level, is considered as a composite object on the next lower level of greater detail; as a result the natural grain of space or time that is applicable at each level decreases by an order of magnitude when we shift our attention from one level to the next lower one. We understand walls in terms of bricks, bricks in terms of crystals, crystals in terms of molecules etc. As a result the number of levels that can be distinguished meaningfully in a hierarchical system is kind of proportional to the logarithm of the ratio between the largest and the smallest grain, and therefore, unless this ratio is very large, we cannot expect many levels. In computer programming our basic building block has an associated time grain of less than a microsecond, but our program may take hours of computation time. I do not know of any other technology covering a ratio of 1010 or more: the computer, by virtue of its fantastic speed, seems to be the first to provide us with an environment where highly hierarchical artefacts are both possible and necessary. This challenge, viz. the confrontation with the programming task, is so unique that this novel experience can teach us a lot about ourselves. It should deepen our understanding of the processes of design and creation, it should give us better control over the task of organizing our thoughts. If it did not do so, to my taste we should not deserve the computer at all!
+------------------------------------------------------------------------------------------------------------------
+
+It has already taught us a few lessons, and the one I have chosen to stress in this talk is the following. We shall do a much better programming job, provided that we approach the task with a full appreciation of its tremendous difficulty, provided that we stick to modest and elegant programming languages, provided that we respect the intrinsic limitations of the human mind and approach the task as Very Humble Programmers.
